@@ -20,7 +20,7 @@ function useWindowSize (){
 };
 
 function App() {
-  const [width] = useWindowSize();
+  const [height, width] = useWindowSize();
   const finalData = [];
   
   function getData (array){
@@ -41,12 +41,12 @@ function App() {
   getData(data.data);
 
   const section = finalData.map(
-    (jobs) => {
-      if(width < 1000){
-         return <SectionOnMobile data={jobs}/>
+    (jobs, index) => {
+      if(height, width < 1000){
+        return <SectionOnMobile data={jobs} index={index}/>
       }
       else {
-        return <Section data={jobs}/>
+        return <Section data={jobs} index={index}/>
       }
   });
   

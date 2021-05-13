@@ -12,13 +12,6 @@ $font-stack:'Roboto', sans-serif;
     justify-content: space-around;
   }
 
-  .section-reverse{
-    font: 100% $font-stack;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-  }
-
   .card{
     background-image: $card-background-color;
     height: 600px;

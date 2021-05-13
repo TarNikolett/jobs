@@ -7,6 +7,8 @@ export default function Section (props){
   const data = props.data;
   const [clicked, setClicked] = useState(false);
 
+  const [finalData, setFinalData] = useState(data);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [jobsPerPage] = useState(5);
   
@@ -17,9 +19,11 @@ export default function Section (props){
   const reverse = () => {
     if(!clicked){
       setClicked(true);
+      setFinalData(data.reverse());
     }
     else{
       setClicked(false);
+      setFinalData(data.reverse());
     }
   };
 
@@ -31,18 +35,18 @@ export default function Section (props){
 
   return (
     <>
-      <div className={clicked ?"section-reverse" : "section"}>
+      <div className="section">
         {Cards}
       </div>
       <Pagination
-        currentJobs={data}
+        currentJobs={finalData}
         jobsPerPage={jobsPerPage}
         totalJobs={data.length}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       />
       <div className="button-container">
-        <button className="button" onClick={() => reverse()}>{clicked ?"Hátra" : "Előre"}</button>
+        <button className="button" onClick={() => reverse()}>{clicked ?"Előre" : "Hátra"}</button>
       </div>
     </>
   )

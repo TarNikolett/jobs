@@ -1,0 +1,58 @@
+$card-background-color: linear-gradient(#69bae9, #9db1d4);
+$card3-background-color: linear-gradient(#9db1d4, #69bae9);
+$card3-border-color: #db28d2;
+$button-background-color: #0d80c4;
+$button-text-color: #FFFFFF;
+$li-color: #063792;
+$font-stack:'Roboto', sans-serif;
+
+  .section {
+    font: 100% $font-stack;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card{
+    background-image: $card-background-color;
+    height: 600px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .card-3{
+    background-image: $card3-background-color;
+    border: 3px solid $card3-border-color;
+  }
+
+  .technology-list{
+    list-style-type: none;
+    font-weight: 600;
+    color: $li-color;
+    border: 1px solid $li-color;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px 0;
+  }
+
+  .technology-title {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .button {
+    border-radius: 20px;
+    height: 50px;
+    width: 50%;
+    border:none;
+    background-color: $button-background-color;
+    color: $button-text-color;
+  }
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+  }

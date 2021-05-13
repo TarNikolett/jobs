@@ -1,24 +1,21 @@
-.paginate-right-button-container{
+.paginate-button-container {
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
+}
+
+.btn {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  border: none;
+  border-radius: 20px;
 }
 
 .paginate-button-right {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
   background-image: url('http://simpleicon.com/wp-content/uploads/arrow-35-150x150.png');
-  background-size: 100px 100px;
-  border: none;
-  border-radius: 20px;
 }
 
 .paginate-button-left {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
   background-image: url('http://simpleicon.com/wp-content/uploads/arrow-34-150x150.png');
-  background-size: 100px 100px;
-  border: none;
-  border-radius: 20px;
 }

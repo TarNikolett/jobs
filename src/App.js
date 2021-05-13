@@ -1,5 +1,6 @@
-import './Components/card.scss';
 import React, { useState, useEffect } from 'react';
+
+import './Components/card.scss';
 
 import Section from './Components/Section';
 import data from './Components/data';
@@ -14,7 +15,7 @@ function useWindowSize (){
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
-    }
+    };
   }, [])
   return size;
 };
@@ -44,8 +45,7 @@ function App() {
     (jobs, index) => {
       if(height, width < 1000){
         return <SectionOnMobile data={jobs} index={index}/>
-      }
-      else {
+      }else {
         return <Section data={jobs} index={index}/>
       }
   });

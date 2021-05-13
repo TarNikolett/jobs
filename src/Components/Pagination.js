@@ -31,9 +31,9 @@ const Pagination = ({ jobsPerPage, totalJobs, setCurrentPage, currentPage }) => 
   };
 
   return (
-    <div className="paginate-right-button-container">
-      <button className="paginate-button-left" onClick={() => paginateBackward(pageNumber)}></button>
-      <button className="paginate-button-right" onClick={() => paginateForward(pageNumber)}></button>
+    <div className="paginate-button-container">
+      <button className="btn paginate-button-left" onClick={() => paginateBackward(pageNumber)}></button>
+      <button className="btn paginate-button-right" onClick={() => paginateForward(pageNumber)}></button>
     </div>
   )
 };
